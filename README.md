@@ -485,7 +485,7 @@ mcu %>%
         axis.title.x = element_blank())
 ```
 
-<img src="figure-markdown_github/gross-per-budget-ratio-1.png" width="80%" style="display: block; margin: auto;" />
+<img src="figure-markdown_github/gross-per-budget-ratio-2.png" width="80%" style="display: block; margin: auto;" />
 With this approach, we can see that **Spider-Man: No Way Home** is in
 1st place while **Avengers: Endgame** is in 2nd place. It means that
 **Spider-Man: No Way Home’s** production budget is cheaper than
