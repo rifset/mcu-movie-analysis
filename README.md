@@ -1,4 +1,6 @@
-# Introduction
+# I Love You 3000 - Marvel Cinematic Universe (MCU) Movie Exploratory and Sentiment Analysis
+
+## Introduction
 
 “I love you 3000,” said Morgan Stark to her dad—Tony Stark aka Iron Man.
 Iron Man is one of the former members of the Avengers, he’s my favorite
@@ -10,7 +12,7 @@ which was released in December 2021. As a fan, I’m interested to learn
 more about their movies through exploratory data analysis and simple
 sentiment analysis.
 
-# Data preparation
+## Data preparation
 
 I used three different data from Kaggle and Wikipedia.
 
@@ -24,7 +26,7 @@ I used three different data from Kaggle and Wikipedia.
 I downloaded data from Kaggle on Nov 19th, 2021, but then I manually
 updated the data by myself on Jan 20th, 2022.
 
-## Loading packages and defining color palette
+### Loading packages and defining color palette
 
 ``` r
 #data manipulation
@@ -45,7 +47,7 @@ library(gridExtra)
 colorParam <- c("#e84118", "#9c88ff", "#4cd137", "#fbc531", "#7f8fa6")
 ```
 
-## Importing data (1)
+### Importing data (1)
 
 Having the data imported, I sort of processed the data such as
 reformatting dates with `lubridate` and parsing numeric values with
@@ -423,9 +425,9 @@ Robert Downey Jr., Chris Evans, Scarlett Johansson, Jeremy Renner
 </tbody>
 </table>
 
-# Exploratory data analysis
+## Exploratory data analysis
 
-## Top-selling movies
+### Top-selling movies
 
 Let’s see the top-selling movie by its total worldwide and opening gross
 revenue values.
@@ -489,7 +491,7 @@ With this approach, we can see that **Spider-Man: No Way Home** is in
 **Spider-Man: No Way Home’s** production budget is cheaper than
 **Avengers: Endgame** though it has higher total gross revenue.
 
-## Top rated movies
+### Top rated movies
 
 IMDB and Metacritic are two of the popular movie rater websites. IMDB is
 very suitable for understanding the general audience’s view of movies,
@@ -531,7 +533,7 @@ Despite having a 7.3/10 IMDB rating, **Black Panther** has the highest
 Metascore among MCU’s movies. It was also nominated in 7 Oscars and
 awarded to win 3 of them.
 
-## Movie genres
+### Movie genres
 
 ``` r
 mcu %>% 
@@ -562,7 +564,7 @@ and around eighteen percent are **Comedy** and **Fantasy**. In my
 opinion, **Thor: Ragnarok** is the funniest MCU movie, its genre is
 action, adventure, and comedy.
 
-# Sentiment analysis
+## Sentiment analysis
 
 In this section, I will do simple sentiment analysis using the
 dictionary method. The step will be explained later. Before analysis, I
@@ -571,7 +573,7 @@ transcript of three recent movies released in 2022. Credit goes to
 [ScrapsFromTheLoft](https://scrapsfromtheloft.com/tag/movie-transcripts/)
 site.
 
-## Importing data (2)
+### Importing data (2)
 
 First, load the data. Each file contains the entire dialogues spoken or
 narrated in the movie. I load them up then I put them in one tabular
@@ -738,7 +740,7 @@ indication
 </tbody>
 </table>
 
-## Most used words
+### Most used words
 
 What are the most used words in the movies?
 
@@ -760,7 +762,7 @@ appears in the word cloud. The most used words are: **yeah**, **gonna**,
 words, the words *people*, *tony*, *stark*, and *peter* also come in
 significant size.
 
-## Positive and negative sentiment
+### Positive and negative sentiment
 
 As I mentioned earlier, the sentiment analysis method is the dictionary
 approach. Each word is simply compared to words in the sentiment
@@ -1045,7 +1047,7 @@ frequencies also overcome the positive words’. Nonetheless, the word
 love is in the highest place for positive sentiment word. *“Love” surely
 does motivate a person to be a hero, doesn’t it?*
 
-# Reference
+## Reference
 
 <div id="refs" class="references csl-bib-body">
 
