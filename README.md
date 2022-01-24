@@ -3,9 +3,9 @@
 ## Introduction
 
 “I love you 3000,” said Morgan Stark to her dad—Tony Stark aka Iron Man.
-Iron Man is one of the former members of the Avengers, he’s my favorite
+Iron Man is one of the former member of the Avengers, he’s my favorite
 Avengers all the time. The Avengers is a fictional superhero team based
-on Marvel Comics. It is part of the Marvel Cinematic Universe (MCU)—a
+on Marvel Comics. It is the part of the Marvel Cinematic Universe (MCU)—a
 superhero movie franchise produced by Marvel Studios. There are 27
 movies until late 2021, their recent movie is Spider-Man: No Way Home
 which was released in December 2021. As a fan, I’m interested to learn
@@ -23,8 +23,8 @@ I used three different data from Kaggle and Wikipedia.
 3.  Characters of the Marvel Cinematic Universe
     (<https://en.wikipedia.org/wiki/Characters_of_the_Marvel_Cinematic_Universe>)
 
-I downloaded data from Kaggle on Nov 19th, 2021, but then I manually
-updated the data by myself on Jan 20th, 2022.
+I downloaded the data from Kaggle on Nov 19th, 2021, but then I manually
+updated it by myself on Jan 20th, 2022.
 
 ### Loading packages and defining color palette
 
@@ -49,7 +49,7 @@ colorParam <- c("#e84118", "#9c88ff", "#4cd137", "#fbc531", "#7f8fa6")
 
 ### Importing data (1)
 
-Having the data imported, I sort of processed the data such as
+Having the data imported, I processed the data by
 reformatting dates with `lubridate` and parsing numeric values with
 `stringr` from `tidyverse`.
 
@@ -486,7 +486,7 @@ mcu %>%
 ```
 
 <img src="figure-markdown_github/gross-per-budget-ratio-2.png" width="80%" style="display: block; margin: auto;" />
-With this approach, we can see that **Spider-Man: No Way Home** is in
+By this approach, we can see that **Spider-Man: No Way Home** is in
 1st place while **Avengers: Endgame** is in 2nd place. It means that
 **Spider-Man: No Way Home’s** production budget is cheaper than
 **Avengers: Endgame** though it has higher total gross revenue.
@@ -557,7 +557,7 @@ mcu %>%
 ```
 
 <img src="figure-markdown_github/other-genre-1.png" width="80%" style="display: block; margin: auto;" />
-Every MCU movie is an action and adventure movie. But, other than those
+Every MCU movie is an action and adventure movie. But other than those
 two mentioned genres, the three topmost genres that also dominate the
 entire MCU’s movies. Around sixty percent are dominated by **Sci-Fi**,
 and around eighteen percent are **Comedy** and **Fantasy**. In my
@@ -566,8 +566,8 @@ action, adventure, and comedy.
 
 ## Sentiment analysis
 
-In this section, I will do simple sentiment analysis using the
-dictionary method. The step will be explained later. Before analysis, I
+In this section, I did simple sentiment analysis using the
+dictionary method. The step will be explained later. Before doing the analysis, I
 updated Hari’s movie dialogues dataset by adding the dialogue or movie
 transcript of three recent movies released in 2022. Credit goes to
 [ScrapsFromTheLoft](https://scrapsfromtheloft.com/tag/movie-transcripts/)
@@ -575,8 +575,8 @@ site.
 
 ### Importing data (2)
 
-First, load the data. Each file contains the entire dialogues spoken or
-narrated in the movie. I load them up then I put them in one tabular
+First, I loaded the data. Each file contains the entire dialogues spoken or
+narrated in the movie. I loaded them up then I put them in one tabular
 table. Second, I cleaned the data from numeric (0-9), dot (.), dash (-),
 question mark (?), and unnecessary white spaces.
 
@@ -667,7 +667,7 @@ Mommy
 
 The next step is splitting every sentence into a single word, this is
 called *tokenization*. Then I removed common meaningless word, called
-“stop-words,” to reduce the volume of the word tokens.
+“stop-words”, to reduce the volume of the word tokens.
 
 ``` r
 dialogue_token <- dialogue_all %>% 
@@ -774,7 +774,7 @@ But, before the analysis, I think it is necessary to reduce the word
 volume even more since the words such as tony, stark, and peter are
 present in the data frequently. Those words are meaningless as they are
 character names, so I removed them just like the stop-words. All MCU’s
-character names I obtain by manually scraping from MCU Wikipedia
+character names obtained by web scraping from MCU Wikipedia
 [page](https://en.wikipedia.org/wiki/Characters_of_the_Marvel_Cinematic_Universe).
 All the scraping process is done using the `rvest` package.
 
@@ -898,7 +898,7 @@ Supporting
 </tbody>
 </table>
 
-To get a good result, I reduce every word to its root word, which called
+To get a good result, I reduced every word to its root word, which called
 lemmatization. In R, `lemmatize_words()` function is from `textstem`
 package.
 
@@ -1004,7 +1004,7 @@ positive
 </tbody>
 </table>
 
-Finally I can see the sentiment distribution.
+Finally we can see the sentiment distribution.
 
 ``` r
 dialogue_sentiment %>%
@@ -1041,7 +1041,7 @@ print(wc2)
 <img src="figure-markdown_github/wordcloud-2.png" width="80%" style="display: block; margin: auto;" />
 
 As far I know, every MCU movie is rated PG-13 although they serve action
-and fighting scenes. This answers why the word kill, lose, and die are
+and fighting scenes. This answers why the word *kill*, *lose*, and *die* are
 in the topmost negative sentiment word. Those negative words’
 frequencies also overcome the positive words’. Nonetheless, the word
 love is in the highest place for positive sentiment word. *“Love” surely
