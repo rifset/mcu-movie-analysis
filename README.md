@@ -563,7 +563,7 @@ mcu %>%
 Every MCU movie is an action and adventure movie. But other than those
 two mentioned genres, the three topmost genres that also dominate the
 entire MCU’s movies. Around sixty percent are dominated by **Sci-Fi**,
-and around eighteen percent are **Comedy** and **Fantasy**. In my
+and around eighteen percent each is **Comedy** and **Fantasy**. In my
 opinion, **Thor: Ragnarok** is the funniest MCU movie, its genre is
 action, adventure, and comedy.
 
