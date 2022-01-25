@@ -486,8 +486,9 @@ mcu %>%
 ```
 
 <img src="figure-markdown_github/gross-per-budget-ratio-2.png" width="80%" style="display: block; margin: auto;" />
-By this approach, we can see that Spider-Man: No Way Home is in
-1st place while Avengers: Endgame is in 2nd place. It means that
+
+By this approach, we can see that **Spider-Man: No Way Home** is in
+1st place while **Avengers: Endgame** is in 2nd place. It means that
 Spider-Man: No Way Home’s production budget is cheaper than
 Avengers: Endgame though it has higher total gross revenue.
 
@@ -529,6 +530,7 @@ grid.arrange(p.imdb, p.meta, nrow = 1)
 ```
 
 <img src="figure-markdown_github/rating-1.png" width="80%" style="display: block; margin: auto;" />
+
 Despite having a 7.3/10 IMDB rating, **Black Panther** has the highest
 Metascore among MCU’s movies. It was also nominated in 7 Oscars and
 awarded to win 3 of them.
@@ -557,6 +559,7 @@ mcu %>%
 ```
 
 <img src="figure-markdown_github/other-genre-1.png" width="80%" style="display: block; margin: auto;" />
+
 Every MCU movie is an action and adventure movie. But other than those
 two mentioned genres, the three topmost genres that also dominate the
 entire MCU’s movies. Around sixty percent are dominated by **Sci-Fi**,
