@@ -1,4 +1,7 @@
-# I Love You 3000 - Marvel Cinematic Universe (MCU) Movie Exploratory and Sentiment Analysis
+# I Love You 3000 - Marvel Cinematic Universe (MCU) Movies Exploratory and Sentiment Analysis
+
+![](cover.jpg)
+*Illustration asset by [Kincir](https://kincir.com/movie/cinema/cara-marvel-cinematic-universe-memperpanjang-cerita-y0VwgYEOSdket)*
 
 ## Introduction
 
