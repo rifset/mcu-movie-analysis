@@ -3,6 +3,23 @@
 ![](cover.jpg)
 *Illustration asset by [Kincir](https://kincir.com/movie/cinema/cara-marvel-cinematic-universe-memperpanjang-cerita-y0VwgYEOSdket)*
 
+## Table of Content
+  - [Introduction](#introduction)
+  - [Data preparation](#data-preparation)
+    * [Loading packages and defining color palette](#loading-packages-and-defining-color-palette)
+    * [Importing data (1)](#importing-data-1)
+  - [Exploratory data analysis](#exploratory-data-analysis)
+    * [Top-selling movies](#top-selling-movies)
+    * [Top rated movies](#top-rated-movies)
+    * [Movie genres](#movie-genres)
+  - [Sentiment analysis](#sentiment-analysis)
+    * [Importing data (2)](#importing-data-2)
+    * [Most used words](#most-used-words)
+    * [Positive and negative sentiment](#positive-and-negative-sentiment)
+  - [Reference](#reference)
+
+---
+
 ## Introduction
 
 “I love you 3000,” said Morgan Stark to her dad—Tony Stark aka Iron Man.
